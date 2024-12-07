@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Protest+Revolution&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.nev {
+    background-color: rgb(41, 10, 36);
+    color: white;
+    height: 60px;
+    width: auto;
+    padding: 5px;
+}
+.font-sty1{
+    padding: 8px;
+    font-family: "Protest Revolution", sans-serif;
+}
+.gamecontenor{
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+.contenor{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    padding: 20px;
+    justify-content: center;
+    margin-left: 300px;
+    position: relative;
+    
+}
+.box{
+    border: 5px solid black;
+    justify-items: center;
+    text-align: center;
+    font-size: 160px;
+    /* padding: 50px; */
+    font-family: "Protest Revolution", serif;
+    cursor: pointer;
+
+}
+.box:hover{
+    background-color: rgb(223, 214, 223);
+}
+.info{
+    padding: 30px;
+    font-size: 20px;
+    font-family: "Hachi Maru Pop", cursive;
+}
+.box-2{
+    display: flex;
+    margin: 20px;
+}
+.info-sty{
+    text-decoration: underline;
+}
+#reset{
+    background-color: rgb(177, 129, 129);
+    color: white;
+    height: 35px;
+    width: 80px;
+    border-radius: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.imgbox img{
+    width: 0px;
+    transition: width 1s ease-in-out;
+}
+.br-0 {
+    border-right: 0px;
+}
+.bl-0 {
+    border-left: 0px;
+}
+.bt-0 {
+    border-top: 0px;
+}
+.bb-0 {
+    border-bottom: 0px;
+}
+@media screen and (max-width: 900px)
+{
+    .gamecontenor{
+        flex-wrap: wrap ;
+    
+    }
+    .box{
+        font-size: 60px;
+    }
+    .contenor{
+        margin-left: 100px;
+    }
+}
+.line{
+    height: 13px;
+    width: 0px;
+    background-color:black;
+    filter: blur(3px);
+    position: absolute;
+    transition: width 1s ease-in-out;
+    border-radius: 50px;
+}
+@media screen and (max-width: 1600px)
+{
+    .box{
+        font-size: 120px;
+    }
+}
+@media screen and (max-width: 1150px)
+{
+    .box{
+        font-size: 100px;
+    }
+}
+@media screen and (max-width: 850px)
+{
+    .box{
+        font-size: 60px;
+    }
+}
